@@ -1,0 +1,86 @@
+_repo: The-Lock-and-Key-Library--Classic-Mystery-and-Detective-Stories--Modern-English_2038
+_version: 0.0.1
+contributor:
+  contributors:
+  - agent_name: Doyle, Arthur Conan
+    aliases:
+    - Doyle, Sir Arthur Conan
+    - Doyle, A. Conan
+    - Conan Doyle, Arthur, Sir
+    birthdate: 1859
+    deathdate: 1930
+    gutenberg_agent_id: '69'
+    url: http://www.gutenberg.org/2009/agents/69
+    wikipedia: http://en.wikipedia.org/wiki/Arthur_Conan_Doyle
+  - agent_name: Collins, Wilkie
+    alias: Collins, William Wilkie
+    birthdate: 1824
+    deathdate: 1889
+    gutenberg_agent_id: '98'
+    url: http://www.gutenberg.org/2009/agents/98
+    wikipedia: http://en.wikipedia.org/wiki/Wilkie_Collins
+  - agent_name: Castle, Egerton
+    birthdate: 1858
+    deathdate: 1920
+    gutenberg_agent_id: '4570'
+    url: http://www.gutenberg.org/2009/agents/4570
+  - agent_name: Weyman, Stanley John
+    alias: Weyman, Stanley J. (Stanley John)
+    birthdate: 1855
+    deathdate: 1928
+    gutenberg_agent_id: '742'
+    url: http://www.gutenberg.org/2009/agents/742
+    wikipedia: http://en.wikipedia.org/wiki/Stanley_J._Weyman
+  - agent_name: Kipling, Rudyard
+    aliases:
+    - Kipling, Joseph Rudyard
+    - Kipling, R. (Rudyard)
+    birthdate: 1865
+    deathdate: 1936
+    gutenberg_agent_id: '132'
+    url: http://www.gutenberg.org/2009/agents/132
+    wikipedia: http://en.wikipedia.org/wiki/Rudyard_Kipling
+  - agent_name: Stevenson, Robert Louis
+    alias: Stevenson, R. L. (Robert Louis)
+    birthdate: 1850
+    deathdate: 1894
+    gutenberg_agent_id: '35'
+    url: http://www.gutenberg.org/2009/agents/35
+    wikipedia: http://en.wikipedia.org/wiki/Robert_Louis_Stevenson
+covers:
+- cover_type: archival
+  image_path: 2038/2038-h/images/cover-tb.jpg
+  rights: Public domain in the USA.
+  rights_url: http://creativecommons.org/about/pdm
+creator:
+  editor:
+    agent_name: Hawthorne, Julian
+    birthdate: 1846
+    deathdate: 1934
+    gutenberg_agent_id: '675'
+    url: http://www.gutenberg.org/2009/agents/675
+    wikipedia: http://en.wikipedia.org/wiki/Julian_Hawthorne
+description: ''
+gutenberg_bookshelf: Short Stories
+gutenberg_issued: '2005-06-04'
+gutenberg_type: Text
+identifiers:
+  gutenberg: '2038'
+language: en
+publisher: Project Gutenberg
+rights: Public domain in the USA.
+rights_url: http://creativecommons.org/about/pdm
+subjects:
+- !lcsh 'Fiction'
+- !lcc 'PR'
+- !lcsh 'Detective and mystery stories, English'
+- !lcsh 'Short stories'
+- GITenberg
+tableOfContents: 'Rudyard Kipling: -- My Own True Ghost Story -- The Sending of Dana
+  Da -- In the House of Suddhoo -- His Wedded Wife -- A. Conan Doyle:  A Case of Identity
+  -- A Scandal in Bohemia -- The Red-Headed League -- Egerton Castle: The Baron''s
+  Quarry -- Stanley J. Weyman: The Fowl in the Pot -- Robert Louis Stevenson: The
+  Pavilion on the Links -- Wilkie Collins:  The Dream Woman -- Anonymous:  The Lost
+  Duchess -- The Minor Canon -- The Pipe -- The Puzzle -- The Great Valdez Sapphire'
+title: 'The Lock and Key Library: Classic Mystery and Detective Stories: Modern English'
+url: http://www.gutenberg.org/ebooks/2038
