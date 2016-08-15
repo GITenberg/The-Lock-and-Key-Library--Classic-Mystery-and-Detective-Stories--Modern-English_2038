@@ -1,0 +1,61 @@
+sudo: required
+dist: trusty
+language: ruby
+
+before_install:
+before_install:
+- gem install asciidoctor -v 1.5.2
+- gem install tilt
+- sudo pip install git+https://github.com/gitenberg-dev/gitberg
+- sudo pip install pillow
+- sudo pip install cssutils
+- sudo pip install docutils
+- sudo pip install roman
+- sudo pip install git+https://github.com/gitenberg-dev/pg-epubmaker
+script:
+- VERSION=`ruby -e "require 'yaml'; meta = YAML.load_file('metadata.yaml'); puts meta['_version'];"`
+- git clone https://github.com/gitenberg-dev/asciidoctor-htmlbook.git
+- sudo pip install -r asciidoctor-htmlbook/gitberg-machine/requirements.txt
+
+- /usr/bin/python -c "from gitenberg import travis; travis.build_epub()"
+- ebook-convert book.epub book.mobi
+- xvfb-run ebook-convert book.epub book.pdf
+branches:
+  only:
+  - master
+notifications:
+  webhooks:
+    urls:
+      - https://unglue.it/api/travisci/webhook
+    on_success: always
+    on_failure: never
+    on_start: never
+deploy:
+  skip_cleanup: true
+  provider: releases
+  api_key:
+    secure: ZBvcJSbMi+eftiUEsFmg1S333bABS64MWPZjI3IsNGCxfBYT5Xb0x/n58kRr3duSzURAjJEZKvrP1vw43LGMEk3PTUOYkyKkl3nC71k5rulvHeabQvjZgMPgSOugP7w8ziLSJbae8r1dC8/5jc/OrXe+7ZCLjbsjed9a4x7Ax47j2GGqEe5k3xSdmKP5s+vretaSf/pQItMgiCswGyavw7x5NnXvWdq4YhSnhmbZ7QT3fdNE0PxO9kEzGDJnTTvVxLfTS4xsJoqcogRS4tY/98ouXxCA12VLgElDlqNL8IANo1K0boLGB4hn3/O+JyBd2gGDs7hI3uXvLKENDwLFFkLePZuzMiozZEL+rXp5WEZ/YZw+g5pp1azB4DwJBeAluhtkd5hYaq8GYVBL/qI2LfRm/rwoF3iX4dxqG31DskWVM06Hd/2xzhN+pvZ39QOKgIVbPEP39yUKnzIczNuuewpVDrs1qVIO9fv0g3wRF08IBCZJVZPT+8/4S6PX5/ZREWd4ukNMc4s/BjUMFSqslnQ6tYFImW06nz6F2qFafTqWoHtlTu/ci3yF86Ges09tF4QfPovYkY+2ZSFYSlpmt1zjm5ZiR0c+zSnOe3aAZcqbRDEJHIDCHfTNnY8maRUXtVMw0yrZ4QP7LTKpW3JjWPCMHfGuxPIj/NVM580ouwU=
+  file:
+    - book.epub
+    - book.mobi
+    - book.pdf
+  "on":
+    repo: GITenberg/The-Lock-and-Key-Library--Classic-Mystery-and-Detective-Stories--Modern-English_2038
+addons:
+  apt:
+    packages:
+    - xsltproc
+    - xvfb
+    - calibre
+    - python-pip
+    - git
+    - python-dev
+    - libjpeg-dev
+    - libpng-dev
+    - libfreetype6
+    - libfreetype6-dev
+    - zlib1g-dev
+    - python-lxml
+    - libxml2-dev
+    - libxslt1-dev
+    - tidy
