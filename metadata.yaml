@@ -1,5 +1,5 @@
 _repo: The-Lock-and-Key-Library--Classic-Mystery-and-Detective-Stories--Modern-English_2038
-_version: 0.1.0
+_version: 0.2.0
 contributor:
   contributors:
   - agent_name: Doyle, Arthur Conan
@@ -49,9 +49,7 @@ contributor:
     wikipedia: http://en.wikipedia.org/wiki/Robert_Louis_Stevenson
 covers:
 - cover_type: archival
-  image_path: 2038/2038-h/images/cover-tb.jpg
-  rights: Public domain in the USA.
-  rights_url: http://creativecommons.org/about/pdm
+  image_path: 2038-h/images/cover-tb.jpg
 creator:
   editor:
     agent_name: Hawthorne, Julian
@@ -61,6 +59,8 @@ creator:
     url: http://www.gutenberg.org/2009/agents/675
     wikipedia: http://en.wikipedia.org/wiki/Julian_Hawthorne
 description: ''
+edition_identifiers:
+  edition_id: http://www.gutenberg.org/ebooks/2038#The-Lock-and-Key-Library--Classic-Mystery-and-Detective-Stories--Modern-English
 gutenberg_bookshelf: Short Stories
 gutenberg_issued: '2005-06-04'
 gutenberg_type: Text
